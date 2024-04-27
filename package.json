@@ -1,0 +1,33 @@
+{
+  "name": "react18",
+  "version": "1.0.0",
+  "description": "从零实现 React18",
+  "keywords": ["React", "React18"],
+  "author": "xurenda<xurenda@qq.com>",
+  "license": "ISC",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint --fix --quiet ./packages",
+    "format": "prettier --write ./packages"
+  },
+  "lint-staged": {
+    "./packages/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix --quiet"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/js": "^9.1.1",
+    "eslint": "^9.1.1",
+    "globals": "^15.0.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "rollup": "^4.16.4",
+    "typescript-eslint": "^7.7.1"
+  }
+}
